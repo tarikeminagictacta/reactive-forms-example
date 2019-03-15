@@ -1,7 +1,7 @@
 <div class="form-group" [formGroup]="parentGroup">
   <label for="reference">{{ labelText }}</label>
   <div class="input-group">
-    <input class="form-control" id="reference" formControlName="reference"/>
+    <input class="form-control" [class.is-invalid]="invalid" id="reference" formControlName="reference"/>
     <div class="input-group-append">
       <div class="input-group-text">
           <div class="form-check form-check-inline">
