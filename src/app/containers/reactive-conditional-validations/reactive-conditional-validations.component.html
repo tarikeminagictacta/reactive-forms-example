@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <form [formGroup]="form">
+    <app-text-input [parentGroup]="form" controlName="firstName" label="First Name"></app-text-input>
+    <app-text-input [parentGroup]="form" controlName="lastName" label="Last Name"></app-text-input>
+    <app-reference-input2 [parentGroup]="form" controlName="reference" label="Reference"></app-reference-input2>
+    <button type="submit" (click)="submit()">Submit</button>
+  </form>
+  <app-form-status [form]="form"></app-form-status>
+</div>

@@ -17,6 +17,8 @@ import {
 } from './containers/reactive-custom-validations/reactive-custom-validations.component';
 import { ReactiveSimpleFormComponent } from './containers/reactive-simple-form/reactive-simple-form.component';
 import { ReferenceInputComponent } from './components/reference-input/reference-input.component';
+import { ReferenceInput2Component } from './components/reference-input2/reference-input2.component';
+import { ReactiveConditionalValidationsComponent } from './containers/reactive-conditional-validations/reactive-conditional-validations.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ReferenceInputComponent } from './components/reference-input/reference-
     ReactiveCustomValidationsComponent,
     FormStatusComponent,
     ReactiveCrossFieldValidationComponent,
-    ReferenceInputComponent
+    ReferenceInputComponent,
+    ReferenceInput2Component,
+    ReactiveConditionalValidationsComponent
   ],
   imports: [
     BrowserModule,

@@ -45,4 +45,20 @@ export class CustomValidators {
     return null;
   }
 
+  public static structuredReferenceNumber(control: AbstractControl): { [key: string]: any } | null  {
+    const errors = Validators.pattern(/^\d{3}\/\d{4}\/\d{5}$/)(control);
+    if (control.value && errors) {
+      return CustomValidators.invalidStructureReference;
+    }
+    return null;
+  }
+
+  public static unstructuredReferenceNumber(control: AbstractControl): { [key: string]: any } | null  {
+    const errors = Validators.maxLength(CustomValidators.invalidUnstructuredReference.unstructuredReferenceMaxLength)(control);
+    if (control.value && errors) {
+      return CustomValidators.invalidUnstructuredReference;
+    }
+    return null;
+  }
+
 }
