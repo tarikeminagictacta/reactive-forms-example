@@ -1,0 +1,5 @@
+<div class="form-group" [formGroup]="parentGroup">
+  <label [for]="controlName">{{labelText}}</label>
+  <input class="form-control" [class.is-invalid]="invalid" [id]="controlName" [name]="controlName" type="text" [formControlName]="controlName">
+  <app-input-errors [showErrors]="touched" [errors]="errors"></app-input-errors>
+</div>

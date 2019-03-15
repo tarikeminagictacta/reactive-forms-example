@@ -1,0 +1,19 @@
+<div class="card mt-3">
+  <div class="card-body">
+    <h5 class="card-title">Form value:</h5>
+    <pre class="card-text">{{ form.value | json }}</pre>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="card-body">
+    <h5 class="card-title">Form status:</h5>
+    <ul class="card-text">
+      <li>Invalid: {{ form.invalid }}</li>
+      <li>Valid: {{ form.valid }}</li>
+      <li>Touched: {{ form.touched }}</li>
+      <li>Pristine: {{ form.pristine }}</li>
+      <li>Dirty: {{ form.dirty }}</li>
+    </ul>
+  </div>
+</div>

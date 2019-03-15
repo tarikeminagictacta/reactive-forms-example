@@ -1,0 +1,20 @@
+<div *ngIf="showErrors && errors" class="text-danger">
+  <small *ngIf="errors.required">
+    This field is required
+  </small>
+  <small *ngIf="errors.minlength">
+    This text should at least have {{ errors.minlength.requiredLength }} characters
+  </small>
+  <small *ngIf="errors.email">
+    This email is in invalid format
+  </small>
+  <small *ngIf="errors.domainEmail">
+    This email should be in {{ errors.expectedDomain }} domain
+  </small>
+  <small *ngIf="errors.structuredReference">
+    Invalid structured reference format
+  </small>
+  <small *ngIf="errors.unstructuredReference">
+    Unstructured reference cannot exceede {{errors.unstructuredReferenceMaxLength}} characters
+  </small>
+</div>
