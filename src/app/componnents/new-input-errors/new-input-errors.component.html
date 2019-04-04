@@ -1,0 +1,6 @@
+<div *ngIf="errors">
+  <div *ngFor="let key of errorKeys">
+    <small>Type: {{key}}</small> <br>
+    <small>Error data: {{errors[key] | json}}</small>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <form [formGroup]="form">
+    <app-text-cva formControlName="firstName" label="First Name"></app-text-cva>
+    <app-new-input-errors [errors]="getErrors('firstName')"></app-new-input-errors>
+    <app-text-cva formControlName="lastName" label="Last Name"></app-text-cva>
+    <app-new-input-errors [errors]="getErrors('lastName')"></app-new-input-errors>
+  </form>
+
+  <app-form-status [form]="form"></app-form-status>
+</div>

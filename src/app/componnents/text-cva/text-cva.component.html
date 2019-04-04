@@ -1,0 +1,4 @@
+<div class="form-group">
+  <label [for]="id">{{label}}</label>
+  <input class="form-control" type="text" name="tada" [id]="id" (input)="setValue($event.target.value)" [disabled]="disabled" (blur)="setTouched()">
+</div>
